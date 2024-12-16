@@ -1,0 +1,76 @@
+$shamrock: #16dfaa;
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#grid {
+  width: 100vw;
+  height: 100vh;
+  background: $shamrock;
+}
+
+.k-hold {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 354px;
+  height: 354px;
+  margin-left: -177px;
+  margin-top: -177px;
+  cursor: pointer;
+}
+
+.k-black {
+  display: block;
+  width: 354px;
+  height: 354px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.k-enter {
+  display: block;
+  width: 354px;
+  height: 354px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  color: #fff;
+  font-size: 40px;
+  text-transform: uppercase;
+  font-family: "PT Sans Narrow", Impact, sans-serif;
+  font-weight: 700;
+}
+
+.k-stroke {
+  opacity: 1;
+  stroke-linecap: round;
+  stroke-linejoin: mitter;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+}
+
+.k-black__stroke {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transform: translateZ(100px) scaleX(-1);
+  transform: translateZ(100px) scaleX(-1);
+}
+
+.k-black__stroke svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+}
